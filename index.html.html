@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Abdul Muiz Hasnaat</title>
+
+<style>
+
+body{
+  margin:0;
+  padding:0;
+  font-family:'Segoe UI',sans-serif;
+  color:white;
+  text-align:center;
+  background-image:url("https://images.unsplash.com/photo-1464349095431-e9a21285b5f3");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+/* DARK OVERLAY */
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.75);
+  z-index:-1;
+}
+
+.page{
+  display:none;
+  padding:60px 20px;
+  min-height:100vh;
+}
+
+.active{
+  display:block;
+}
+
+h1{
+  font-size:55px;
+  color:#ff66cc;
+  text-shadow:0 0 25px #ff00ff;
+}
+
+h2{
+  font-size:35px;
+  color:#ffd700;
+}
+
+p{
+  font-size:20px;
+}
+
+button{
+  padding:12px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,#ff0080,#ff8c00);
+  color:white;
+  cursor:pointer;
+  margin:30px 0;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #ff0080;
+}
+
+.cake{
+  font-size:120px;
+  margin:20px 0;
+}
+
+/* SPRINKLES */
+.sprinkle{
+  position:fixed;
+  width:6px;
+  height:15px;
+  animation:fall linear infinite;
+  z-index:-1;
+}
+
+@keyframes fall{
+  from{transform:translateY(-100px);}
+  to{transform:translateY(100vh);}
+}
+
+/* FINAL GALLERY */
+.final-gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin-top:20px;
+  padding:20px;
+}
+
+.placeholder{
+  width:100%;
+  height:200px;
+  border:3px dashed pink;
+  border-radius:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:18px;
+  color:#ffccff;
+  background:rgba(255,255,255,0.1);
+}
+
+@media(max-width:768px){
+  .final-gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* ✅ NEW CSS FOR FINAL PAGE IMAGES */
+.gallery-img{
+  width:100%;          /* grid me full width */
+  max-width:100%;      /* container exceed na kare */
+  height:auto;         /* natural height */
+  border-radius:15px;
+  box-shadow:0 0 20px pink;
+  transition:0.3s;
+}
+
+.gallery-img:hover{
+  transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<!-- HOME -->
+<div id="home" class="page active">
+  <h1>🎉 Happy Birthday 🎉</h1>
+  <h2>Abdul Muiz Hasnaat 💙</h2>
+  <div class="cake">🎂🕯🕯🕯</div>
+  <button onclick="nextPage('wish1')">Click for Special Wishes</button>
+</div>
+
+<!-- WISHES -->
+<div id="wish1" class="page">
+  <h2>Wish 1 💖</h2>
+  <p>May your life be filled with endless happiness, love, and unforgettable moments.</p>
+  <button onclick="nextPage('wish2')">Next</button>
+</div>
+
+<div id="wish2" class="page">
+  <h2>Wish 2 🌟</h2>
+  <p>Wishing you success in every step you take and joy in every day you live.</p>
+  <button onclick="nextPage('wish3')">Next</button>
+</div>
+
+<div id="wish3" class="page">
+  <h2>Wish 3 🎉</h2>
+  <p>Keep shining bright, spreading smiles, and inspiring everyone around you.</p>
+  <button onclick="nextPage('wish4')">Next</button>
+</div>
+
+<div id="wish4" class="page">
+  <h2>Wish 4 💫</h2>
+  <p>May Allah bless you with good health, prosperity, and amazing adventures ahead.</p>
+  <button onclick="nextPage('wish5')">Next</button>
+</div>
+
+<div id="wish5" class="page">
+  <h2>Wish 5 🎂</h2>
+  <p>You are truly special, and I hope this year brings you everything your heart desires.</p>
+  <button onclick="nextPage('memory1')">Some Memories</button>
+</div>
+
+<!-- MEMORIES -->
+<div id="memory1" class="page">
+  <h2>Memory 1 📸</h2>
+  <p>22 april ko tmhara phli dfa samny ana aur milna...lkn tmhy pta hai ab mai kya sochti hn hasnaat..k kash hm kbhi mily hi na hoty....tu aj ye sb mery sath na ho rha hota....tum tu bht asani sy side hogaye..mera kya jo aj bhi tmhy hrr nmz ki dua mai mangti hn...hr tahajjud mai sirf tmhara naam...iss sy zyada insan kisi ko kaisy chah skta hai yar.....</p>
+  <button onclick="nextPage('memory2')">Next</button>
+</div>
+
+<div id="memory2" class="page">
+  <h2>Memory 2 💕</h2>
+  <p>Aik aur yaad 13 june...kaash us din mai hi apny pr control kr leti aur tmhy kuch na btati....at least khud ko takleef tu na hoti....na hi tumhy meri in batun ko brdsht krna prta... </p>
+  <button onclick="nextPage('memory3')">Next</button>
+</div>
+
+<div id="memory3" class="page">
+  <h2>Memory 3 ✨</h2>
+  <p>tmhara hrr bt pr mood khrb krna aur phr mery mnaany ka intizar krna...i really miss yar....</p>
+  <button onclick="nextPage('memory4')">Next</button>
+</div>
+
+<div id="memory4" class="page">
+  <h2>Memory 4 🌈</h2>
+  <p>phr meri birthday pr tmhara is trhan sy wish krna ...yaqeen kro mujhy wo wish kbhi ni bhoolti...kher tumy bhi yd nhi hoga k uss sy mujhy kitni khushi mili thi...dekho gy k kya kaha tha tumny..Happy birthday meri pyari jan sawera..ALLAH apko hmesha khush rkhy aur sehat wali zindagi ATA farmaye aur kamyabian ATA farmaye...stay happy stay blessed..and keep smiling...i love you sooo so much meri shehzadi...meri pyari si jan hai tu choti si moti si...mn janta k mn tujhy zyada time nhi deta khush nhi krta jo tu chahti wo nhi krta but kya krun tujh sy dil bhry tu iss bt pr aaun na...huhh kher ho jaye ga ye bhi aik din k tujhy khush krun ga bus...meri jan tu hmesha hansti muskurati rha kr bus meri yhi dua yhi chahat hai....huhhhhhh...janty ho ye sb dekh kr kya guzrti hogi kisi pr...</p>
+  <button onclick="nextPage('memory5')">Next</button>
+</div>
+
+<div id="memory5" class="page">
+  <h2>Memory 5 💙</h2>
+  <p>aur akhir mai 12 ya 14 january ko tmhara hrr chez sy la taluq ho jana.....aur tmhy pta mai jitni bhi koshish kr ln k han ab isko nhi krun gi msg...meri bhi ko self respect hai...lkn tujhy pta k aik waqt aisa ata mai hrr chez hr bt bhool jati hn aur tumhy sirf iss umeed pr msg krti k kash aaj jwb mil jaye ...kash meri dua aj qabool ho jaye...lkn tmhara jwb na any pr phr sy mai bilkul mittii ho jati...meri khud k ansuon pr ikhtiyar nhi hota aur wo tmhari sari batein yd kr k bs chlty rhty.....bta k mera kya qasoor tha jo mai ye sb brdsht kr rhi...hai tery passs in sb chezon ka koi hal....kher itni bt kon sunata..mai hi pagal jo ye sb khny lgi....once again HAPPY BIRTHDAY...ALLAH TUMHEIN HRR USS CHEEZ SY NAWAZY JO TUMHARY HAQ MAI BEHTR HO AUR TUM JO CHAHTY....AMEEN</p>
+  <button onclick="nextPage('final')">Ready for Final Surprise?</button>
+</div>
+
+<!-- FINAL -->
+<div id="final" class="page">
+  <h2>🎁 Final Surprise 🎁</h2>
+  <p>Some Special Moments 💖</p>
+
+  <div class="final-gallery">
+  <img src="https://i.postimg.cc/6pLsQ1VY/pic1-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/DmkDvq8C/pic2-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/h4kPz6xt/pic3-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/Mpx6tBdD/pic4-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/7ZVxRLRG/pic5-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/W1RjzkBh/pic6-jpg.jpg" class="gallery-img">
+<img src="https://i.postimg.cc/vmt63Mrt/Whats-App-Image-2026-02-28-at-11-18-08-PM-(1).jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/w3Y6CRHx/pic8-jpg.jpg" class="gallery-img">
+  <img src="https://i.postimg.cc/Dy1s8qSd/pic9-jpg.jpg" class="gallery-img">
+</div>
+
+  <button onclick="nextPage('home')">🔄 Start Again</button>
+</div>
+
+<script>
+
+function nextPage(id){
+  var pages=document.querySelectorAll('.page');
+  pages.forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function createSprinkles(){
+  for(let i=0;i<100;i++){
+    let s=document.createElement("div");
+    s.classList.add("sprinkle");
+    s.style.left=Math.random()*100+"vw";
+    s.style.animationDuration=(Math.random()*3+2)+"s";
+    s.style.background="hsl("+Math.random()*360+",100%,50%)";
+    document.body.appendChild(s);
+  }
+}
+
+createSprinkles();
+
+</script>
+
+</body>
+</html>
